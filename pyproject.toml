@@ -55,7 +55,7 @@ tag_regex = "^(?P<prefix>v)?(?P<version>[^\\+]+)(?P<suffix>.*)?$"
 [project]
 dynamic = ["version"]
 license = {file = "LICENSE.txt"}
-dependencies = ['ozi-core~=1.4.2', 'setuptools_scm[toml]', 'tomli>=2.0.0;python_version<"3.11"']
+dependencies = ['ozi-core~=1.4.4', 'setuptools_scm[toml]', 'tomli>=2.0.0;python_version<"3.11"']
 
 [project.optional_dependencies] # also meson test suite names
 # continuous integration
