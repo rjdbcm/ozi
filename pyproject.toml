@@ -57,7 +57,7 @@ tag_regex = "^(?P<prefix>v)?(?P<version>[^\\+]+)(?P<suffix>.*)?$"
 dynamic = ["version"]
 license = {file = "LICENSE.txt"}
 dependencies = [
-    'ozi-core~=1.6.0',
+    'ozi-core~=1.7.0',
     'setuptools_scm[toml]',
     'tomli>=2.0.0;python_version<"3.11"',
 ]

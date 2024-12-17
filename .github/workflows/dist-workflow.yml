@@ -40,7 +40,7 @@ jobs:
             tuf-repo-cdn.sigstore.dev:443
             oauth2.sigstore.dev:443
 
-      - uses: OZI-Project/checkpoint@94fd5184fa20bc409fb39e2529ba432626101c18 # 1.3.0
+      - uses: OZI-Project/checkpoint@5eb7b6ec9ba2eec71a0418270d92e9a6d81d285f # 1.4.0
         with:
           python-version: "3.10"
           parallel: false
@@ -71,7 +71,7 @@ jobs:
             tuf-repo-cdn.sigstore.dev:443
             oauth2.sigstore.dev:443
 
-      - uses: OZI-Project/checkpoint@94fd5184fa20bc409fb39e2529ba432626101c18 # 1.3.0
+      - uses: OZI-Project/checkpoint@5eb7b6ec9ba2eec71a0418270d92e9a6d81d285f # 1.4.0
         with:
           python-version: "3.11"
           parallel: false
@@ -102,7 +102,7 @@ jobs:
             tuf-repo-cdn.sigstore.dev:443
             oauth2.sigstore.dev:443
 
-      - uses: OZI-Project/checkpoint@94fd5184fa20bc409fb39e2529ba432626101c18 # 1.3.0
+      - uses: OZI-Project/checkpoint@5eb7b6ec9ba2eec71a0418270d92e9a6d81d285f # 1.4.0
         with:
           python-version: "3.12"
           parallel: false
@@ -132,7 +132,7 @@ jobs:
             rekor.sigstore.dev:443
             tuf-repo-cdn.sigstore.dev:443
 
-      - uses: OZI-Project/checkpoint@94fd5184fa20bc409fb39e2529ba432626101c18
+      - uses: OZI-Project/checkpoint@5eb7b6ec9ba2eec71a0418270d92e9a6d81d285f
         with:
           python-version: "3.13"
         
@@ -172,7 +172,7 @@ jobs:
             files.pythonhosted.org:443
             downloads.python.org:443
 
-      - uses: OZI-Project/draft@71345732b81be9a093d4dd6409030b5d3e91e1ea
+      - uses: OZI-Project/draft@b462b01f7f92a361d92233a8c2d326276c2d91a3
         id: draft
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -217,7 +217,7 @@ jobs:
             downloads.python.org:443
             oauth2.sigstore.dev:443
 
-      - uses: OZI-Project/release@1a3cb28a9a9d51fa8e333740a8b863c0f23ab3da # 1.0.5
+      - uses: OZI-Project/release@0e2db492d3d36479eadc1ba15e509e911816bc39 # 1.1.2
         id: release
         with:
           tag: ${{ needs.draft.outputs.tag }}
@@ -262,6 +262,6 @@ jobs:
           fulcio.sigstore.dev:443
           rekor.sigstore.dev:443
 
-    - uses: OZI-Project/publish@e5fa598dca4f35b10e8071e1050c332c3263e11d
+    - uses: OZI-Project/publish@8e64c6d501bee7b5b0db5247cd761085d411d1bf
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
