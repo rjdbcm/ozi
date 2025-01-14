@@ -55,7 +55,7 @@ tag_regex = "^(?P<prefix>v)?(?P<version>[^\\+]+)(?P<suffix>.*)?$"
 dynamic = ["version"]
 dependencies = [
     'pathvalidate~=3.2.1',
-    'ozi-core~=1.10.0',
+    'ozi-core~=1.11.2',
     'setuptools_scm[toml]',
     'tomli>=2.0.0;python_version<"3.11"',
 ]
